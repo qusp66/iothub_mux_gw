@@ -1,0 +1,24 @@
+{
+  "name": "hub-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./dist/app.js",
+    "build": "tsc -p .",
+    "dev": "PORT=4400 nodemon -L ./src/app.ts"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.0.0",
+    "@types/events": "^3.0.0",
+    "@types/hapi": "^18.0.7",
+    "@types/hapi__hapi": "^20.0.13",
+    "@types/node": "^18.11.9",
+    "azure-iot-amqp-base": "^2.5.1",
+    "azure-iot-common": "^1.13.1",
+    "azure-iot-multiplexing-gateway": "^0.0.3",
+    "azure-iothub": "^1.15.1",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4"
+  }
+}
